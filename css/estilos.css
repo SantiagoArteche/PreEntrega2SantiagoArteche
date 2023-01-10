@@ -7,16 +7,16 @@
 
 body{
     font-family: 'Playfair Display SC', serif; 
+   
 }
 header{
     background-color: black;
     font-size: 21px;
-    width: 100vw;
 }
 .titulo{
     
     text-align: center;
-    color: white;
+    color: rgb(175, 52, 175);
     font-size: 40px;
     border: 4px double purple;
     font-family: 'Rubik 80s Fade', cursive;
@@ -25,11 +25,11 @@ header{
 
 header nav ul{
     list-style: none;
-    
+
 }
 .list-group {
     background-color: gray;
-    padding: 20px; 
+    padding: 20px !important; 
     
 }
 .list-group-item{
@@ -43,18 +43,59 @@ header nav ul{
 }
 .dropdown-menu {
     background-color: gray;
+    
 }
-#oferta{
-    background-color: gray;
-}
-
-
-
 @media screen and (max-width: 502px) {
     header .list-group{
         display: flex;
         flex-direction: column;
     }
 }
-/* hasta aca lo usando de css en el header */
+/* hasta aca el header usando css */
 
+.mn{
+    margin: 0 !important;
+}
+
+.carousel{
+    background-color: black;
+    height: 78vh;
+    width: 99vw;  
+    
+}
+.slide{
+    height: 77vh;
+    width: 100%;  
+}
+.carousel-inner img {
+    width: 100%;
+    height: 70vh;
+}
+.as iframe{
+    height: 100%;
+    width: 100%;
+}
+.art1{
+    background-image: url(../multimedia/deportista2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 80vh;
+}
+.art1 .frase{
+    background-color: rgba(0, 0, 0, 0.481);
+    color: ghostwhite;
+}
+.art2{
+    background-color: black;
+    
+}
+.art2 img{
+    height: 100%;
+    width: 30vw;
+    align-self: center;
+}
+.art2 h3{
+    border: 6px double black;
+    background-color: white;
+}
