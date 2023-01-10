@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display+SC&family=Rubik+80s+Fade&display=swap');
+body{
+    font-family: 'Playfair Display SC', serif;
+    
+}
+header{
+    background-color: black;
+    width: 100vw;
+    font-size: 23px;
+}
+.titulo{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    border: 6px double white;
+    font-family: 'Rubik 80s Fade', cursive;
+}
+header ul{
+    list-style: none;}
+.list-group {
+    background-color: gray;
+    padding: 20px; 
+}
+.list-group li{
+    background-color: gray;
+    border: 0 ;
+}
+.list-group li a{
+    background-color: gray;
+    color: purple;
+    border: 0 ;
+}
+.dropdown-menu {
+    background-color: gray;
+}
+
+
+
