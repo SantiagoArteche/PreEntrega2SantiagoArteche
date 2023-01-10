@@ -1,28 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display+SC&family=Rubik+80s+Fade&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: 'Playfair Display SC', serif;
-    
+    font-family: 'Playfair Display SC', serif; 
+    margin: 0  !important;
+    padding: 0 Im !important;
 }
 header{
     background-color: black;
+    font-size: 21px;
     width: 100vw;
-    font-size: 23px;
 }
 .titulo{
-    width: 100%;
+    
     text-align: center;
     color: white;
     font-size: 40px;
-    border: 6px double white;
+    border: 4px double purple;
     font-family: 'Rubik 80s Fade', cursive;
+    
 }
-header ul{
-    list-style: none;}
+
+header nav ul{
+    list-style: none;
+    
+}
 .list-group {
     background-color: gray;
     padding: 20px; 
+    
 }
-.list-group li{
+.list-group-item{
     background-color: gray;
     border: 0 ;
 }
@@ -34,6 +46,17 @@ header ul{
 .dropdown-menu {
     background-color: gray;
 }
+#oferta{
+    background-color: gray;
+}
 
 
+
+@media screen and (max-width: 502px) {
+    header .list-group{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* hasta aca lo usando de css en el header */
 
