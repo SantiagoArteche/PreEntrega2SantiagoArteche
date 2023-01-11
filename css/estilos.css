@@ -148,7 +148,10 @@ footer img{
     }
     .art h3{
         
-        font-size: 18px ;
+        font-size: 18px ; 
+    }
+    .fote h3{
+        font-size: 18px;
         
     }
 }
