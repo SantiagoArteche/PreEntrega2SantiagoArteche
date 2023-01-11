@@ -14,33 +14,35 @@
         
          <!-- navbar bootstrap -->
             <nav>
-                <div class="titulo text-uppercase">
+                <div class="titulo text-uppercase bg-dark">
                     arteche clothes
                  </div>
-                <ul class="list-group list-group-horizontal d-flex justify-content-around text-uppercase">
-                    <li class="list-group-item"> <a href="">hombre</a></li>
-                    <li class="list-group-item"><a href="">mujer</a></li>
+                <ul class="list-group list-group-horizontal d-flex-inline justify-content-around text-center p-4 bg-secondary list-unstyled">
+                    <li class="list-group-item border-0 bg-secondary"> <a href="">Hombre</a></li>
+                    <li class="list-group-item border-0 bg-secondary"><a href="">Mujer</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                          marcas
+                        <a class="nav-link dropdown-toggle mt-1 " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                          Marcas
                         </a>
                         <!-- dropdown menu -->
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">nike</a></li>
-                          <li><a class="dropdown-item" href="#">adidas</a></li>
-                          <li><a class="dropdown-item" href="#">puma</a></li>
-                          <li><a class="dropdown-item" href="#">jordan</a></li>
+                        <ul class="dropdown-menu bg-secondary">
+                          <li><a class="dropdown-item" href="#">Nike</a></li>
+                          <li><a class="dropdown-item" href="#">Adidas</a></li>
+                          <li><a class="dropdown-item" href="#">Puma</a></li>
+                          <li><a class="dropdown-item" href="#">Jordan</a></li>
                         </ul>
+                        <!-- fin dropdown menu -->
                       </li>
-                    <li class="list-group-item" id="oferta"><a href="">ofertas</a></li>
+                    <li class="list-group-item border-0 bg-secondary" id="oferta"><a href="">Ofertas</a></li>
                 </ul>
                 </ul>
        </nav> 
+       <!-- fin navbar bootstrap -->
     </header>  
     <!-- hasta aca el header de la pagina con bootstrap -->
     <main class="mn d-flex flex-wrap container-fluid p-0">
       <!-- inicio carousel -->
-        <div id="demo" class="carousel slide flex-wrap col-6 row border border-white m-0" data-ride="carousel">
+        <div id="demo" class="carousel slide col-6 border border-white m-0" data-ride="carousel">
 
             <ul class="carousel-indicators">
               <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -79,18 +81,66 @@
             </a>
             <!-- fin de carousel -->
           </div>
+        <!-- fin carousel -->
+        <!-- inicio aside -->
             <aside class="col-6 as border border-white p-0 ">
               <iframe src="https://www.youtube.com/embed/cpuGsYFU1Gw"  title="YouTube video player" allowfullscreen></iframe>
           </aside>
-          <div class="col-6 art1 d-flex justify-content-center align-items-end border border-white ">
-            <h2 class="frase rounded-pill p-2">se lo que quieres ser</h2>
-          </div>
-          <div class="col-6 art2 d-flex flex-column justify-content-center align-items-center border border-white p-0">
-            <h3>producto mas vendido</h3>
+          <!-- fin aside -->
+          <!-- inicio articulos -->
+          <article class="col-6 art1 d-flex justify-content-center align-items-end border border-white ">
+            <h2 class="frase rounded-pill p-2">Se Lo Que Quieres Ser</h2>
+          </article>
+          <article class="col-6 art2 d-flex flex-column justify-content-center align-items-center border border-white p-0">
+            <h3>Producto Más Vendido</h3>
             <img src="multimedia/jordan2.png" alt="jordan">
-            <a class="btn btn-light p3 mb-2" href="#" role="button">comprar</a>
-          </div>           
+            <a class="btn btn-light p3 mb-2" href="#" role="button">Comprar</a>
+          </article>  
+          <!-- fin articulos  -->
     </main>
+    <!-- fin del main -->
+    <!-- inicio de footer -->
+    <footer class="container-fluid">
+            <div class="row bg-warning">
+            
+          <div class="col-12 text-center redes bg-info"><h2>Redes</h2>
+            <ul class="d-flex flex-row justify-content-around list-unstyled">
+              <li>
+                  <a href=""> <i class="text-dark fa-brands fa-square-instagram"></i></a> 
+              </li>
+              <li>
+                  <a href=""><i class="text-dark fa-brands fa-twitter"></i></a> 
+              </li>
+              <li>
+                  <a href=""><i class="text-dark fa-brands fa-facebook"></i></a> 
+              </li>
+              <li>
+                  <a href=""><i class="text-dark fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                  <a href=""><i class="text-dark fa-brands fa-pinterest"></i></a>
+              </li>
+          </ul>
+          </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center metodos mb-3">
+              <h2 class="text-center">Metodos de Pago</h2>
+              <img src="multimedia/MERCADOPAGO.png" alt="mercadopago">
+
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center dataf mb-3">
+             <h2 class="text-center">Data Fiscal</h2>
+             <img src="multimedia/afip2.jpg" alt="afip">
+            </div>
+            <ul class="d-flex flex-row fot col-12 text-uppercase list-unstyled justify-content-between bg-dark align-items-center p-3 mb-0">
+              <li class=""><a class="text-light" href="">inicio</a></li>
+              <li><a class="text-light" href="">contacto</a></li>
+              <li ><a class="text-light" href="">sobre nosotros</a></li>
+              <li><a class="text-light" href="">arrepentimiento de compra</a></li>
+              <li><a class="text-light" href="">guía de tallas</a></li>
+          </ul>
+          </div>
+    </footer>
+    <!-- fin de footer -->
 
 
 
