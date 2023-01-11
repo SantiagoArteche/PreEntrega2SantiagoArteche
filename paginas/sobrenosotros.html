@@ -4,9 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Nosotros</title>
+    <link rel="shortcut icon" href="../multimedia/circalogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
+    <header id="head">
+        
+        <!-- navbar bootstrap -->
+           <nav >
+               <div class="titulo text-uppercase bg-dark">
+                   arteche clothes
+                </div>
+               <ul class="list-group list-group-horizontal d-flex flex-wrap justify-content-around text-center p-4 bg-secondary list-unstyled">
+                   <li class="list-group-item border-0 bg-secondary"> <a href="paginas/hombre.html">Hombre</a></li>
+                   <li class="list-group-item border-0 bg-secondary"><a href="paginas/mujer.html">Mujer</a></li>
+                   <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle mt-1 " href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                         Marcas
+                       </a>
+                       <!-- dropdown menu -->
+                       <ul class="dropdown-menu bg-secondary text-center">
+                         <li><a class="dropdown-item" href="paginas/marcas/nike/nike.html">Nike</a></li>
+                         <li><a class="dropdown-item" href="paginas/marcas/adidas/adidas.html">Adidas</a></li>
+                         <li><a class="dropdown-item" href="paginas/marcas/puma/puma.html">Puma</a></li>
+                         <li><a class="dropdown-item" href="paginas/marcas/jordan/jordan.html">Jordan</a></li>
+                       </ul>
+                       <!-- fin dropdown menu -->
+                     </li>
+                   <li class="list-group-item border-0 bg-secondary" id="oferta"><a href="paginas/ofertas.html">Ofertas</a></li>
+               </ul>
+               </ul>
+      </nav> 
+      <!-- fin navbar bootstrap -->
+   </header> 
+
+        <!--inicio main  -->
+
+   <main>
+    <div class="accordion" id="accordionExample">
+        <div class="card ">
+          <div class="card-header bg-dark" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left text-uppercase text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                acerca de nosotros
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                Somos un microemprendimiento familiar oriundo de Rosario orientado a la importación de indumentaria, con el objetivo de hacer felices a nuestros cliente.            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-dark" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed text-uppercase text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                mision
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                Vivimos entrenando para ganar y conquistar a los consumidores ofreciendo una experiencia premium. Hablamos de la moda con el objetivo de acompañarlos en cada momento de sus vidas para que puedan competir, entrenar o lucir su estilo personal, transmitiendo inspiración e innovación.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header bg-dark" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed text-uppercase text-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                vision
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body bg-light">
+                Ser el líder en ventas y en servicio al cliente, siendo siempre cercano al consumidor.            </div>
+          </div>
+         
+        <div class="card">
+            <div class="card-header bg-dark" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed text-uppercase text-light" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                 valores
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse p-0" aria-labelledby="headingFour" data-parent="#accordionExample">
+             <ul class="card-body m-0 p-0 text-center d-flex flex-column align-items-center list-group sobrenosotroslist">
+                <li class="list-group-item">Cliente siempre primero</li>
+                <li class="list-group-item">Compromiso</li>
+                <li class="list-group-item">Pasión</li>
+                <li class="list-group-item">Hacer lo correcto</li>
+                <li class="list-group-item">Innovación</li>
+                <li class="list-group-item">Comunicación</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+   </main>
+   <!-- fin main -->
+
+
+
+
+   <!-- inicio de footer -->
+   <footer class="container-fluid">
+    <div class="row bg-secondary">
     
-</body>
+  <div class="col-12 text-center redes bg-info fote"><h3>Redes</h3>
+    <ul class="d-flex flex-row justify-content-around list-unstyled">
+      <li>
+          <a href="https://www.instagram.com/"> <i class="text-dark fa-brands fa-square-instagram"></i></a> 
+      </li>
+      <li>
+          <a href="https://twitter.com/"><i class="text-dark fa-brands fa-twitter"></i></a> 
+      </li>
+      <li>
+          <a href="https://es-la.facebook.com/"><i class="text-dark fa-brands fa-facebook"></i></a> 
+      </li>
+      <li>
+          <a href="https://www.youtube.com/"><i class="text-dark fa-brands fa-youtube"></i></a>
+      </li>
+      <li>
+          <a href="https://ar.pinterest.com/"><i class="text-dark fa-brands fa-pinterest"></i></a>
+      </li>
+  </ul>
+  </div>
+    <div class="col-6 d-flex flex-column justify-content-center align-items-center fote1 metodos mb-3">
+      <h3 class="text-center">Metodos de Pago</h3>
+      <a href="https://www.mercadopago.com.ar/"> <img src="../multimedia/mp.png" alt="mercadopago"> </a>
+
+    </div>
+    <div class="col-6 d-flex flex-column justify-content-center align-items-center fote2 dataf mb-3">
+     <h3 class="text-center">Data Fiscal</h3>
+    <a href="https://www.afip.gob.ar/960/"> <img src="../multimedia/afip2.jpg" alt="afip"> </a>
+    </div>
+    <ul class="d-flex flex-row fotul col-12 text-uppercase list-unstyled justify-content-between bg-dark align-items-center p-3 mb-0">
+      <li class=""><a class="text-light" href="../index.html">inicio</a></li>
+      <li><a class="text-light" href="contacto.html">contacto</a></li>
+      <li ><a class="text-light" href="sobrenosotros.html">sobre nosotros</a></li>
+      <li><a class="text-light" href="arrepentimientodecompra.html">arrepentimiento de compra</a></li>
+      <li><a class="text-light" href="tallas.html">guía de tallas</a></li>
+  </ul>
+  </div>
+</footer>
+<!-- fin de footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </html>
