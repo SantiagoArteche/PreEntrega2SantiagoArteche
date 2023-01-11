@@ -79,8 +79,7 @@ footer{
 
 footer img{
     height: 25vh;
-    width: 15vw;
-
+    width: 35vh;
 }
 /* fin css del footer */
 
@@ -127,7 +126,7 @@ footer img{
     }
     footer img{
         height: 20vh;
-        width: 35vw;
+        width: 30vw;
     }
     
 }
