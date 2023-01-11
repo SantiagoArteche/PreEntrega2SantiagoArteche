@@ -5,9 +5,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: black;
-}
-header{
     
+}
+
+header{
     font-size: 25px;
 }
 .titulo{
@@ -19,7 +20,6 @@ header{
 }
 .list-group li a{
      color: purple;
-    
 }
 .dropdown-menu {
     font-size: 20px;
@@ -30,12 +30,12 @@ header{
 /* inicio carousel */
 .carousel{
     background-color: black;
-    height: 78vh;
+    height: 68vh;
     width: 99vw;     
 }
 .carousel-inner img {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
 }
 /* fin carousel */
 .as iframe{
@@ -60,11 +60,11 @@ header{
 .art2 img{
     height: 100%;
     width: 30vw;
-    align-self: center;
+    
 }
 .art2 h3{
     border: 6px double black;
-    background-color: white;
+    background-color: white; 
 }
 /* termina css del main */
 /* inicia css del footer */
@@ -79,16 +79,77 @@ footer{
 
 footer img{
     height: 25vh;
-    width: 30vw;
+    width: 15vw;
 
 }
 /* fin css del footer */
 
 
 /* media queries */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .art1{
+        height: 57vh;  
+    }
+    footer img{
+        width: 25vw;
+    }
+    
+}
+@media screen and (max-width: 767px) {
     header .list-group{
-        display: flex;
         flex-direction: column;
     }
+    .dropdown-menu{
+        width: 90vw;
+    }
+
+    .carousel{
+        height: 50vh;   
+        width: 20vw !; 
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 40vh;
+    }
+    .as{
+       height: 50vh;
+    }
+    .as iframe{
+        height: 50vh;
+        
+    }
+    .art{
+        height: 50vh;
+    }
+   .fotul {
+        flex-direction: column !important ;
+        gap: 10px;
+    }
+    footer img{
+        height: 20vh;
+        width: 35vw;
+    }
+    
 }
+@media screen and (min-width: 320px) and (max-width: 479px){
+    header{
+        font-size: 18px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .dropdown-menu {
+        font-size: 16px;
+        
+    }
+    .art {
+        height: 40vh;
+        font-size: 18px ;
+    }
+    .art h3{
+        
+        font-size: 18px ;
+        
+    }
+}
+/* fin media queries */
