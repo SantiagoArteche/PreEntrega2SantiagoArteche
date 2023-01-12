@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrepentimiento de Compra</title>
+    <link rel="shortcut icon" href="../multimedia/circalogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/estilos.css" />
 </head>
+
 <body>
-    
+    <header id="head">
+        <!-- navbar bootstrap -->
+        <nav>
+            <div class="titulo text-uppercase bg-dark">arteche clothes</div>
+            <ul
+                class="list-group list-group-horizontal d-flex flex-wrap justify-content-around text-center p-4 bg-secondary list-unstyled">
+                <li class="list-group-item border-0 bg-secondary">
+                    <a href="paginas/hombre.html">Hombre</a>
+                </li>
+                <li class="list-group-item border-0 bg-secondary">
+                    <a href="paginas/mujer.html">Mujer</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mt-1" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Marcas
+                    </a>
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu bg-secondary text-center">
+                        <li>
+                            <a class="dropdown-item" href="paginas/marcas/nike/nike.html">Nike</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="paginas/marcas/adidas/adidas.html">Adidas</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="paginas/marcas/puma/puma.html">Puma</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="paginas/marcas/jordan/jordan.html">Jordan</a>
+                        </li>
+                    </ul>
+                    <!-- fin dropdown menu -->
+                </li>
+                <li class="list-group-item border-0 bg-secondary" id="oferta">
+                    <a href="paginas/ofertas.html">Ofertas</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- fin navbar bootstrap -->
+    </header>
+        <!-- inicio main -->
+    <main class="bg-primary border border-dark" id="contacto">
+        <div class="container d-flex justify-content-around">
+            <h2 class="text-uppercase text-center mt-4 shadow-lg p-3 mb-5 bg-dark rounded">
+                arrepentimiento de compra
+            </h2>
+        </div>
+        <form class="container d-flex flex-column formu text-center align-items-center bg-dark mt-4">
+            <div class="form-group mt-4">
+                <label for="name" class="text-light">Nombre y Apellido:</label>
+                <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-light">Email:</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required />
+            </div>
+            <div class="form-group">
+                <label for="name" class="text-light">Teléfono:</label>
+                <input type="number" class="form-control inpnumb" id="name" required />
+            </div>
+            <div class="form-group mb-3">
+                <label for="cancelacion" class="text-light">Motivo de Cancelación:</label>
+                <select class="form-control" id="cancelacion" required>
+                    <option disabled selected>Seleccionar</option>
+                    <option>Falla del Producto</option>
+                    <option>Demora en la entrega</option>
+                    <option>El producto no me satisface</option>
+                    <option>No es el producto que pedi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="textarea" class="text-light">Describa su situacion:</label>
+                <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary d-flex mb-2 bg-dark border border-light">
+                Enviar
+            </button>
+        </form>
+    </main>
+    <!-- fin main -->
+    <!-- inicio de footer -->
+    <footer class="container-fluid">
+        <div class="row bg-secondary">
+            <div class="col-12 text-center redes bg-info fote">
+                <h3>Redes</h3>
+                <ul class="d-flex flex-row justify-content-around list-unstyled">
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <i class="text-dark fa-brands fa-square-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/"><i class="text-dark fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://es-la.facebook.com/"><i class="text-dark fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/"><i class="text-dark fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://ar.pinterest.com/"><i class="text-dark fa-brands fa-pinterest"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center fote metodos mb-3">
+                <h3 class="text-center">Metodos de Pago</h3>
+                <a href="https://www.mercadopago.com.ar/">
+                    <img src="../multimedia/mp.png" alt="mercadopago" />
+                </a>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center fote dataf mb-3">
+                <h3 class="text-center">Data Fiscal</h3>
+                <a href="https://www.afip.gob.ar/960/">
+                    <img src="../multimedia/afip2.jpg" alt="afip" />
+                </a>
+            </div>
+            <ul
+                class="d-flex flex-row fotul col-12 text-uppercase list-unstyled justify-content-between bg-dark align-items-center p-3 mb-0">
+                <li class="">
+                    <a class="text-light" href="../index.html">inicio</a>
+                </li>
+                <li><a class="text-light" href="contacto.html">contacto</a></li>
+                <li>
+                    <a class="text-light" href="sobrenosotros.html">sobre nosotros</a>
+                </li>
+                <li>
+                    <a class="text-light" href="arrepentimientodecompra.html">arrepentimiento de compra</a>
+                </li>
+                <li><a class="text-light" href="tallas.html">guía de tallas</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- fin de footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
