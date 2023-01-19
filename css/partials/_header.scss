@@ -1,0 +1,84 @@
+header {
+  font-size: 25px;
+  background: rgb(9, 9, 121);
+  background: radial-gradient(circle,
+      rgba(9, 9, 121, 1) 1%,
+      rgba(2, 23, 60, 1) 38%,
+      rgba(2, 0, 36, 1) 75%);
+
+  @include extrasmall {
+    font-size: 18px;
+  }
+
+  & .titulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    border: 4px double purple;
+    font-family: "Playfair Display SC", serif;
+
+    @include extrasmall {
+      font-size: 30px;
+    }
+  }
+
+  & .titulo:hover {
+    animation: titulo 1s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .ulh {
+    & a:hover {
+      text-decoration: none;
+      animation: headerul 1s;
+      animation-delay: 0;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+
+  & .list-group {
+    @include small {
+      flex-direction: column;
+    }
+
+    @include extrasmall {
+      flex-direction: column;
+    }
+
+    & a {
+      color: purple;
+      font-weight: bolder;
+    }
+  }
+
+  & .dropdown-menu {
+    font-size: 20px;
+
+    @include small {
+      width: $ancho*0.9;
+    }
+
+    @include extrasmall {
+      font-size: 16px;
+      width: $ancho*0.9;
+    }
+  }
+}
+
+@keyframes titulo {
+  to {
+    color: rgb(155, 19, 155);
+  }
+}
+
+@keyframes headerul {
+  to {
+    color: rgb(11, 11, 211);
+    /* transform: scale(1.3);  quisiera saber por que esto solamente marcas*/
+  }
+}

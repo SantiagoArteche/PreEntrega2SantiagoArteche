@@ -1,0 +1,103 @@
+.carousel {
+    background-color: black;
+    height: $alto*1.36;
+    width: $ancho*0.99;
+
+    @include small {
+        height: $alto;
+        width: $ancho*0.2;
+    }
+
+    @include extrasmall {
+        height: $alto;
+        width: $ancho*0.2;
+    }
+
+    & .carousel-inner img {
+        width: 100%;
+        height: $alto*1.2;
+
+        @include small {
+            width: 100%;
+            height: $alto*0.8;
+        }
+
+        @include extrasmall {
+            width: 100%;
+            height: $alto*0.8;
+        }
+    }
+
+}
+
+.as {
+    @include small {
+        height: $alto;
+    }
+
+    @include extrasmall {
+        height: $alto;
+    }
+
+    & iframe {
+        height: 100%;
+        width: 100%;
+
+        @include small {
+            height: $alto;
+        }
+
+        @include extrasmall {
+            height: $alto;
+
+        }
+    }
+}
+
+article {
+    &.art {
+        @include small {
+            height: $alto;
+        }
+
+        @include extrasmall {
+            height: $alto;
+            font-size: 18px;
+        }
+
+        &.art1 {
+            background-image: url(../multimedia/deportista2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            & .frase {
+                background-color: rgba(0, 0, 0, 0.481);
+                color: ghostwhite;
+            }
+        }
+
+        &.art2 {
+            & h3 {
+                border: 6px double black;
+                background-color: white;
+
+                @include extrasmall {
+                    font-size: 18px;
+                }
+            }
+
+            & img {
+                width: $ancho*0.32;
+
+                @include small {
+                    width: 250px;
+                }
+
+                @include extrasmall {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
