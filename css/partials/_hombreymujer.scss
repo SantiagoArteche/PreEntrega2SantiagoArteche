@@ -1,0 +1,88 @@
+#hombre {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 69%);
+
+    & {
+        .titu {
+            background: rgb(9, 9, 121);
+            background: radial-gradient(circle,
+                    rgba(9, 9, 121, 1) 1%,
+                    rgba(2, 23, 60, 1) 38%,
+                    rgba(2, 0, 36, 1) 75%);
+            color: purple;
+
+        }
+    }
+}
+
+#mujer {
+    background: rgb(134, 16, 99);
+    background: linear-gradient(180deg, rgba(134, 16, 99, 1) 0%, rgba(0, 0, 0, 1) 79%);
+
+    & .titu {
+        background: rgb(9, 9, 121);
+        background: radial-gradient(circle,
+                rgba(9, 9, 121, 1) 1%,
+                rgba(2, 23, 60, 1) 38%,
+                rgba(2, 0, 36, 1) 75%);
+        color: purple;
+
+    }
+}
+
+.man {
+    & .cardh:hover {
+        box-shadow: rgba(42, 91, 253, 0.4) -5px 5px, rgba(42, 91, 253, 0.3) -10px 10px,
+            rgba(42, 91, 253, 0.2) -15px 15px, rgba(42, 91, 253, 0.1) -20px 20px,
+            rgba(42, 91, 253, 0.05) -25px 25px;
+
+        transform: scale(1.02);
+    }
+
+    & .buy {
+        animation: comprarmovimiento 0.5s;
+        animation-delay: 0;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        font-size: 15px;
+
+        @include medium {
+            font-size: 13px;
+        }
+
+        @include small {
+            font-size: 13px;
+        }
+
+        @include extrasmall {
+            font-size: 11px;
+        }
+
+    }
+
+    & h2 {
+        font-size: 19px;
+
+        @include small {
+            font-size: 17px;
+        }
+
+        @include extrasmall {
+            font-size: 17px;
+        }
+
+    }
+
+}
+
+@keyframes comprarmovimiento {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: black;
+        transform: scale(1.3);
+    }
+}

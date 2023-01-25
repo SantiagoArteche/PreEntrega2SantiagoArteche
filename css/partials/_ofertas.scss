@@ -1,0 +1,71 @@
+#ofertas {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(110deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(46, 46, 175, 1) 46%,
+            rgba(126, 0, 139, 1) 100%);
+
+    & .ofer {
+        background: rgb(9, 9, 121);
+        background: radial-gradient(circle,
+                rgba(9, 9, 121, 1) 1%,
+                rgba(2, 23, 60, 1) 38%,
+                rgba(2, 0, 36, 1) 75%);
+        color: purple;
+
+    }
+
+    & .ofer2 {
+        color: purple;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(220deg,
+                rgba(255, 255, 255, 0.562) 0%,
+                rgba(0, 0, 0, 1) 40%,
+                rgba(0, 61, 139, 1) 100%);
+    }
+
+    & .ofe {
+        & .cardh:hover {
+            box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px,
+                rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px,
+                rgba(0, 0, 0, 0.05) -25px 25px;
+
+            transform: scale(1.02);
+        }
+
+        & .buy {
+            animation: comprarmovimiento 0.5s;
+            animation-delay: 0;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            font-size: 15px;
+
+            @include medium {
+                font-size: 13px;
+            }
+
+            @include small {
+                font-size: 13px;
+            }
+
+            @include extrasmall {
+                font-size: 11px;
+            }
+
+        }
+
+        & h2 {
+            font-size: 19px;
+
+            @include small {
+                font-size: 17px;
+            }
+
+            @include extrasmall {
+                font-size: 17px;
+            }
+
+        }
+    }
+}
