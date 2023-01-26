@@ -31,14 +31,19 @@ footer {
     }
 
     & .fotul {
+        @include medium{
+            font-size: 15px;
+        }
         @include small {
             flex-direction: column !important;
             gap: 10px;
+            font-size: 14px;
         }
 
         @include extrasmall {
             flex-direction: column !important;
             gap: 10px;
+            font-size: 13px;
         }
     }
 
@@ -48,10 +53,16 @@ footer {
                 rgba(255, 255, 255, 1) 0%,
                 rgba(0, 0, 0, 1) 40%,
                 rgba(0, 61, 139, 1) 100%);
-        border: 3px solid black;
+        border: $borderblack;
 
         & li {
             font-size: 50px;
+            @include small{
+                font-size: 35px;
+            }
+            @include extrasmall {
+                font-size: 30px;
+            }
         }
     }
 }

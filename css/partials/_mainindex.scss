@@ -1,6 +1,7 @@
 .carousel {
   background-color: black;
 
+
   @include small {
     height: $alto;
     width: $ancho * 0.2;
@@ -11,18 +12,18 @@
     width: $ancho * 0.2;
   }
 
-  & .carousel-inner img {
-    @include medium {
-    }
+  & .carousel-inner {
 
-    @include small {
-      width: 100%;
-      height: $alto * 0.8;
-    }
+    & img {
+      @include small {
+        height: 300px;
+        width: 450px;
+        height: $alto * 0.8;
+      }
 
-    @include extrasmall {
-      width: 100%;
-      height: $alto * 0.8;
+      @include extrasmall {
+        height: $alto * 0.8;
+      }
     }
   }
 }
@@ -77,6 +78,7 @@ article {
       & h3 {
         border: 6px double black;
         background-color: white;
+
         @include extrasmall {
           font-size: 18px;
         }
@@ -84,7 +86,7 @@ article {
 
       & img {
         @include small {
-          width: 300px;
+          width: 250px;
         }
 
         @include extrasmall {

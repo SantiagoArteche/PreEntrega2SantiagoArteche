@@ -5,7 +5,13 @@ header {
       rgba(9, 9, 121, 1) 1%,
       rgba(2, 23, 60, 1) 38%,
       rgba(2, 0, 36, 1) 75%);
-
+      border: $borderblack;
+  @include medium{
+    font-size: 20px;
+  }
+  @include small{
+    font-size: 19px;
+  }
   @include extrasmall {
     font-size: 18px;
   }
