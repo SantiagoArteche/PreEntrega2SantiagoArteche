@@ -1,30 +1,35 @@
 #arrep {
   height: $alto*1.8;
   background: rgb(19, 17, 143);
-  background: linear-gradient(
-    0deg,
-    rgba(19, 17, 143, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(19, 17, 143, 1) 0%,
+      rgba(255, 255, 255, 1) 100%);
 
-  @include medium{
-    height: $alto*2;
-  }
-  @include small{
-    height: $alto*2;
-  }
-  @include extrasmall{
+  @include medium {
     height: $alto*2;
   }
 
-  & h2 {
+  @include small {
+    height: $alto*2;
+  }
+
+  @include extrasmall {
+    height: $alto*2;
+  }
+
+  & h1 {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     border: $borderblack;
-    @include small{
-      font-size: 25px;
+    font-size: $fontsize*3.5;
+    @include medium{
+      font-size: $fontsize*2.5;
     }
-    @include extrasmall{
-      font-size: 25px;
+    @include small {
+      font-size: $fontsize*2.5;
+    }
+
+    @include extrasmall {
+      font-size: $fontsize*2.5;
     }
   }
 }
@@ -32,23 +37,28 @@
 .formu {
   width: $ancho*0.26;
   border: $borderblack;
-  @include medium{
+
+  @include medium {
     width: $ancho*0.37;
 
   }
-  @include small{
+
+  @include small {
     width: $ancho*0.50;
   }
-  @include extrasmall{
+
+  @include extrasmall {
     width: $ancho*0.63;
   }
 
   & div {
     width: $ancho*0.22;
-    @include small{ 
+
+    @include small {
       width: $ancho*0.35;
     }
-    @include extrasmall{
+
+    @include extrasmall {
       width: $ancho*0.45;
     }
   }
@@ -61,10 +71,8 @@
 }
 
 .flip-horizontal-fwd {
-  -webkit-animation: flip-horizontal-fwd 0.4s
-    cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
-  animation: flip-horizontal-fwd 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    reverse both;
+  -webkit-animation: flip-horizontal-fwd 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
+  animation: flip-horizontal-fwd 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse both;
 }
 
 @-webkit-keyframes flip-horizontal-fwd {

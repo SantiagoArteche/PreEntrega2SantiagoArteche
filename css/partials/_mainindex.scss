@@ -59,7 +59,7 @@ article {
 
     @include extrasmall {
       height: $alto;
-      font-size: 18px;
+      font-size: $fontsize*1.8;
     }
 
     &.art1 {
@@ -69,18 +69,40 @@ article {
       background-size: cover;
 
       & .frase {
+        font-size: $fontsize*3.3;
         background-color: rgba(0, 0, 0, 0.481);
         color: ghostwhite;
+
+        @include medium {
+          font-size: $fontsize*2.9;
+        }
+
+        @include small {
+          font-size: $fontsize*2.7;
+        }
+
+        @include extrasmall {
+          font-size: $fontsize*2;
+        }
       }
     }
 
     &.art2 {
-      & h3 {
+      & h1 {
         border: 6px double black;
         background-color: white;
+        font-size: $fontsize*2.9;
+
+        @include medium {
+          font-size: $fontsize*2.7;
+        }
+
+        @include small {
+          font-size: $fontsize*2.3;
+        }
 
         @include extrasmall {
-          font-size: 18px;
+          font-size: $fontsize*1.7;
         }
       }
 
@@ -91,6 +113,18 @@ article {
 
         @include extrasmall {
           width: 250px;
+        }
+      }
+
+      & a {
+        font-size: $fontsize*2;
+
+        @include small {
+          font-size: $fontsize*1.7
+        }
+
+        @include extrasmall {
+          font-size: $fontsize*1.5
         }
       }
     }

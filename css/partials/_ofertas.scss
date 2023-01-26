@@ -12,6 +12,7 @@
                 rgba(2, 23, 60, 1) 38%,
                 rgba(2, 0, 36, 1) 75%);
         color: purple;
+        font-family: $fontfam;
 
     }
 
@@ -39,31 +40,31 @@
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             animation-direction: alternate-reverse;
-            font-size: 15px;
+            font-size: $fontsize*1.5;
 
             @include medium {
-                font-size: 13px;
+                font-size: $fontsize*1.3;
             }
 
             @include small {
-                font-size: 13px;
+                font-size: $fontsize*1.3;
             }
 
             @include extrasmall {
-                font-size: 11px;
+                font-size: $fontsize*1.1;
             }
 
         }
 
         & h2 {
-            font-size: 19px;
+            font-size: $fontsize*1.9;
 
             @include small {
-                font-size: 17px;
+                font-size: $fontsize*1.7;
             }
 
             @include extrasmall {
-                font-size: 17px;
+                font-size: $fontsize*1.7;
             }
 
         }

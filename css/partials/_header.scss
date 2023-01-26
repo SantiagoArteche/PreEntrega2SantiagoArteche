@@ -1,19 +1,22 @@
 header {
-  font-size: 25px;
+  font-size: $fontsize*2.5;
   background: rgb(9, 9, 121);
   background: radial-gradient(circle,
       rgba(9, 9, 121, 1) 1%,
       rgba(2, 23, 60, 1) 38%,
       rgba(2, 0, 36, 1) 75%);
-      border: $borderblack;
-  @include medium{
-    font-size: 20px;
+  border: $borderblack;
+
+  @include medium {
+    font-size: $fontsize*2;
   }
-  @include small{
-    font-size: 19px;
+
+  @include small {
+    font-size: $fontsize*1.9;
   }
+
   @include extrasmall {
-    font-size: 18px;
+    font-size: $fontsize*1.8;
   }
 
   & .titulo {
@@ -21,10 +24,10 @@ header {
     color: rgb(255, 255, 255);
     font-size: 50px;
     border: 4px double purple;
-    font-family: "Playfair Display SC", serif;
+    font-family: $fontfam;
 
     @include extrasmall {
-      font-size: 30px;
+      font-size: $fontsize*3;
     }
   }
 
@@ -37,6 +40,7 @@ header {
   }
 
   .ulh {
+
     & a:hover {
       text-decoration: none;
       animation: headerul 1s;
@@ -48,6 +52,7 @@ header {
   }
 
   & .list-group {
+
     @include small {
       flex-direction: column;
     }
@@ -57,20 +62,21 @@ header {
     }
 
     & a {
+      font-family: $fontfam;
       color: purple;
       font-weight: bolder;
     }
   }
 
   & .dropdown-menu {
-    font-size: 20px;
+    font-size: $fontsize*2;
 
     @include small {
       width: $ancho*0.9;
     }
 
     @include extrasmall {
-      font-size: 16px;
+      font-size: $fontsize*1.6;
       width: $ancho*0.9;
     }
   }

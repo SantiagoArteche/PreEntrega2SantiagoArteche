@@ -1,11 +1,10 @@
 #contacto {
     background: rgb(19, 17, 143);
-    background: linear-gradient(
-      0deg,
-      rgba(19, 17, 143, 1) 30%,
-      rgba(255, 255, 255, 1) 100%
-    );
-    & .fcont{
+    background: linear-gradient(0deg,
+            rgba(19, 17, 143, 1) 30%,
+            rgba(255, 255, 255, 1) 100%);
+
+    & .fcont {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg,
                 rgba(255, 255, 255, 1) 0%,
@@ -13,26 +12,31 @@
                 rgba(0, 61, 139, 1) 100%);
         border: $borderblack;
 
-        & label{
+        & label {
             color: white;
-            @include medium{
-                font-size: 15px;
+
+            @include medium {
+                font-size: $fontsize*1.5;
             }
-            @include small{
-                font-size: 14px;
+
+            @include small {
+                font-size: $fontsize*1.4;
             }
-            @include extrasmall{
-                font-size: 13px;
+
+            @include extrasmall {
+                font-size: $fontsize*1.3;
             }
         }
-        & .btn{
+
+        & .btn {
             background-color: black;
         }
-        
-        
+
+
     }
-   & #detalle{
-    height: $alto*0.3;
-    width: 100%;
-   }
+
+    & #detalle {
+        height: $alto*0.3;
+        width: 100%;
+    }
 }
