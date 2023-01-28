@@ -2,16 +2,12 @@
     background: rgb(255, 255, 255);
     background: linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 69%);
 
-    & {
-        .titu {
-            background: rgb(9, 9, 121);
-            background: radial-gradient(circle,
-                    rgba(9, 9, 121, 1) 1%,
-                    rgba(2, 23, 60, 1) 38%,
-                    rgba(2, 0, 36, 1) 75%);
-            color: purple;
-            font-family: $fontfam;
-
-        }
+    & .titu {
+        background: rgb(9, 9, 121);
+        background: radial-gradient(circle,
+                rgba(9, 9, 121, 1) 1%,
+                rgba(2, 23, 60, 1) 38%,
+                rgba(2, 0, 36, 1) 75%);
+        font-family: $fontfam;
     }
 }

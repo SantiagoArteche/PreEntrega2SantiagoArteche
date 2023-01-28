@@ -1,34 +1,18 @@
-#ofertas {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(110deg,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(46, 46, 175, 1) 46%,
-            rgba(126, 0, 139, 1) 100%);
+#marcas{
+    background: rgb(101,36,150);
+background: linear-gradient(360deg, rgba(101,36,150,1) 9%, rgba(16,27,99,1) 81%);
 
-    & .ofer {
-        background: rgb(9, 9, 121);
-        background: radial-gradient(circle,
-                rgba(9, 9, 121, 1) 1%,
-                rgba(2, 23, 60, 1) 38%,
-                rgba(2, 0, 36, 1) 75%);
+    & .titu {
+        background: rgb(101,36,150);
+background: radial-gradient(circle, rgba(101,36,150,1) 47%, rgba(0,0,0,1) 100%);
+        color: white;
         font-family: $fontfam;
-
     }
-
-    & .ofer2 {
-        color: rgb(156, 4, 156);
-        background: rgb(255, 255, 255);
-        background: linear-gradient(220deg,
-                rgba(255, 255, 255, 0.562) 0%,
-                rgba(0, 0, 0, 1) 40%,
-                rgba(0, 61, 139, 1) 100%);
-    }
-
-    & .ofe {
+    & .marca {
         & .cardh:hover {
-            box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px,
-                rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px,
-                rgba(0, 0, 0, 0.05) -25px 25px;
+            box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px,
+                rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px,
+                rgba(255, 255, 255, 0.03) -25px 25px;
 
             transform: scale(1.02);
         }
@@ -69,3 +53,4 @@
         }
     }
 }
+
