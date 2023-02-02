@@ -77,7 +77,7 @@ header .ulh a:hover {
 }
 header .list-group a {
   font-family: "Playfair Display SC", serif;
-  color: purple;
+  color: rgb(197, 0, 197);
   font-weight: bolder;
 }
 header .dropdown-menu {
@@ -136,7 +136,7 @@ header .dropdown-menu {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .carousel .carousel-inner img {
     height: 300px;
-    width: 450px;
+    width: 377px;
     height: 40vh;
   }
 }
@@ -171,22 +171,21 @@ header .dropdown-menu {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  article.art {
-    height: 50vh;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  article.art {
-    height: 50vh;
-    font-size: 18px;
-  }
-}
 article.art.art1 {
   background-image: url(../multimedia/deportista2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  article.art.art1 {
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  article.art.art1 {
+    height: 50vh;
+  }
 }
 article.art.art1 .frase {
   font-size: 33px;
@@ -255,6 +254,7 @@ article.art.art2 a {
 footer {
   background: rgb(255, 255, 255);
   background: linear-gradient(110deg, rgb(255, 255, 255) 0%, rgb(46, 46, 175) 46%, rgb(126, 0, 139) 100%);
+  border-top: 3px solid black;
 }
 footer .fote a {
   height: 100%;
@@ -274,6 +274,13 @@ footer .fote a {
   footer .fote a {
     width: 30vw;
   }
+}
+footer .fote h2 {
+  background: rgb(9, 9, 121);
+  background: radial-gradient(circle, rgb(9, 9, 121) 1%, rgb(2, 23, 60) 38%, rgb(2, 0, 36) 75%);
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   footer .fote h2 {
@@ -310,9 +317,7 @@ footer .fote a {
   }
 }
 footer .redes {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 40%, rgb(0, 61, 139) 100%);
-  border: 3px solid black;
+  margin-top: 10px;
 }
 footer .redes li {
   font-size: 50px;
@@ -432,6 +437,14 @@ footer .redes li {
     transform: translateZ(160px) rotateX(-180deg);
   }
 }
+.mbus .card-header {
+  background: rgb(9, 9, 121);
+}
+.mbus .card-header button {
+  color: white;
+  text-decoration: none;
+}
+
 .ven .cardh:hover {
   box-shadow: rgba(42, 91, 253, 0.4) -5px 5px, rgba(42, 91, 253, 0.3) -10px 10px, rgba(42, 91, 253, 0.2) -15px 15px, rgba(42, 91, 253, 0.1) -20px 20px, rgba(42, 91, 253, 0.05) -25px 25px;
   transform: scale(1.02);
@@ -498,7 +511,7 @@ footer .redes li {
 }
 #hombre {
   background: rgb(255, 255, 255);
-  background: linear-gradient(360deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 69%);
+  background: linear-gradient(110deg, rgb(255, 255, 255) 0%, rgb(46, 46, 175) 46%, rgb(126, 0, 139) 100%);
 }
 #hombre .titu {
   background: rgb(9, 9, 121);
@@ -507,8 +520,8 @@ footer .redes li {
 }
 
 #mujer {
-  background: rgb(134, 16, 99);
-  background: linear-gradient(180deg, rgb(134, 16, 99) 0%, rgb(0, 0, 0) 79%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(110deg, rgb(255, 255, 255) 0%, rgb(46, 46, 175) 46%, rgb(126, 0, 139) 100%);
 }
 #mujer .titu {
   background: rgb(9, 9, 121);
@@ -527,8 +540,8 @@ footer .redes li {
 }
 #ofertas .ofer2 {
   color: rgb(156, 4, 156);
-  background: rgb(255, 255, 255);
-  background: linear-gradient(220deg, rgba(255, 255, 255, 0.562) 0%, rgb(0, 0, 0) 40%, rgb(0, 61, 139) 100%);
+  background: rgb(9, 9, 121);
+  background: radial-gradient(circle, rgb(9, 9, 121) 1%, rgb(2, 23, 60) 38%, rgb(2, 0, 36) 75%);
 }
 #ofertas .ofe .cardh:hover {
   box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
@@ -634,6 +647,9 @@ table td {
 #marcas {
   background: rgb(101, 36, 150);
   background: linear-gradient(360deg, rgb(101, 36, 150) 9%, rgb(16, 27, 99) 81%);
+}
+#marcas .mbus .card-header {
+  background: rgb(101, 36, 150);
 }
 #marcas .titu {
   background: rgb(101, 36, 150);

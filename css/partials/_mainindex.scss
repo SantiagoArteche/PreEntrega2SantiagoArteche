@@ -17,7 +17,7 @@
     & img {
       @include small {
         height: 300px;
-        width: 450px;
+        width: 377px;
         height: $alto * 0.8;
       }
 
@@ -53,20 +53,21 @@
 
 article {
   &.art {
-    @include small {
-      height: $alto;
-    }
-
-    @include extrasmall {
-      height: $alto;
-      font-size: $fontsize*1.8;
-    }
 
     &.art1 {
       background-image: url(../multimedia/deportista2.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+
+      @include small {
+        height: $alto;
+      }
+
+      @include extrasmall {
+        height: $alto;
+      }
+
 
       & .frase {
         font-size: $fontsize*3.3;

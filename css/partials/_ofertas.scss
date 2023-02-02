@@ -17,11 +17,11 @@
 
     & .ofer2 {
         color: rgb(156, 4, 156);
-        background: rgb(255, 255, 255);
-        background: linear-gradient(220deg,
-                rgba(255, 255, 255, 0.562) 0%,
-                rgba(0, 0, 0, 1) 40%,
-                rgba(0, 61, 139, 1) 100%);
+        background: rgb(9, 9, 121);
+        background: radial-gradient(circle,
+                rgba(9, 9, 121, 1) 1%,
+                rgba(2, 23, 60, 1) 38%,
+                rgba(2, 0, 36, 1) 75%);
     }
 
     & .ofe {

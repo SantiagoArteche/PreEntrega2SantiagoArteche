@@ -4,11 +4,13 @@ footer {
             rgba(255, 255, 255, 1) 0%,
             rgba(46, 46, 175, 1) 46%,
             rgba(126, 0, 139, 1) 100%);
+    border-top: $borderblack;
 
     & .fote {
         a {
             height: 100%;
             width: $ancho*0.15;
+
 
             @include medium {
                 width: $ancho*0.2;
@@ -24,12 +26,23 @@ footer {
         }
 
         h2 {
-            @include medium{
+            background: rgb(9, 9, 121);
+            background: radial-gradient(circle,
+                    rgba(9, 9, 121, 1) 1%,
+                    rgba(2, 23, 60, 1) 38%,
+                    rgba(2, 0, 36, 1) 75%);
+            color: white;
+            border: 3px solid white;
+            border-radius: 10px;
+            
+            @include medium {
                 font-size: $fontsize*2.7;
             }
-            @include small{
+
+            @include small {
                 font-size: $fontsize*2.3;
             }
+
             @include extrasmall {
                 font-size: $fontsize*1.8;
             }
@@ -37,9 +50,10 @@ footer {
     }
 
     & .fotul {
-        @include medium{
+        @include medium {
             font-size: $fontsize*1.35;
         }
+
         @include small {
             flex-direction: column !important;
             gap: 10px;
@@ -54,18 +68,16 @@ footer {
     }
 
     & .redes {
-        background: rgb(255, 255, 255);
-        background: linear-gradient(180deg,
-                rgba(255, 255, 255, 1) 0%,
-                rgba(0, 0, 0, 1) 40%,
-                rgba(0, 61, 139, 1) 100%);
-        border: $borderblack;
+        margin-top: 10px;
+        
 
         & li {
             font-size: $fontsize*5;
-            @include small{
+
+            @include small {
                 font-size: $fontsize*3.5;
             }
+
             @include extrasmall {
                 font-size: $fontsize*3;
             }

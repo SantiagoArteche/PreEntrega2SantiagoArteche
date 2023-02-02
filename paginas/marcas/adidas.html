@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,17 +16,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../css/styles.css" />
 </head>
+
 <body>
     <header id="head">
         <!-- navbar bootstrap -->
         <nav>
             <h1 class="titulo text-uppercase m-0">arteche clothes</h1>
             <ul
-                class="list-group list-group-horizontal d-flex flex-wrap justify-content-around text-center p-4 bg-secondary list-unstyled ulh border border-dark">
-                <li class="list-group-item border-0 bg-secondary">
+                class="list-group list-group-horizontal d-flex flex-wrap justify-content-around text-center p-4 bg-light list-unstyled ulh border border-dark">
+                <li class="list-group-item border-0 bg-light">
                     <a href="../hombre.html">Hombre</a>
                 </li>
-                <li class="list-group-item border-0 bg-secondary">
+                <li class="list-group-item border-0 bg-light">
                     <a href="../mujer.html">Mujer</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -33,7 +35,7 @@
                         Marcas
                     </a>
                     <!-- dropdown menu -->
-                    <ul class="dropdown-menu bg-secondary text-center">
+                    <ul class="dropdown-menu bg-light text-center border border-dark">
                         <li>
                             <a class="dropdown-item" href="./nike.html">Nike</a>
                         </li>
@@ -49,7 +51,7 @@
                     </ul>
                     <!-- fin dropdown menu -->
                 </li>
-                <li class="list-group-item border-0 bg-secondary" id="oferta">
+                <li class="list-group-item border-0 bg-light" id="oferta">
                     <a href="../ofertas.html">Ofertas</a>
                 </li>
             </ul>
@@ -63,199 +65,194 @@
         </div>
         <div class="container-fluid row m-0 p-0">
             <div class="col-12 col-lg-2 container-fluid mx-0 my-5 mbus">
-            <h3 class="text-center text-uppercase text-light mb-5">Filtros</h3>
-            <div class="accordion" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                Talla
-                            </button>
-                        </h2>
-                    </div>
+                <h2 class="text-center text-uppercase text-light mb-5">Filtros</h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Talla
+                                </button>
+                            </h2>
+                        </div>
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4">
-                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold"><label
-                                        class="m-0" for="xs">XS</label><input type="radio" name="talle"></li>
-                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold"><label
-                                        class="m-0" for="s">S</label><input type="radio" name="talle"></li>
-                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold"><label
-                                        class="m-0" for="m">M</label><input type="radio" name="talle"></li>
-                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold "><label
-                                        class="m-0" for="l">L</label><input type="radio" name="talle"></li>
-                                <li class="d-flex flex-row justify-content-between font-weight-bold "><label
-                                        class="m-0" for="xl">XL</label><input type="radio" name="talle"></li>
-                            </ul>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-4">
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold"><label
+                                            class="m-0" for="xs">XS</label><input type="radio" name="talle"></li>
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold"><label
+                                            class="m-0" for="s">S</label><input type="radio" name="talle"></li>
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold"><label
+                                            class="m-0" for="m">M</label><input type="radio" name="talle"></li>
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold "><label
+                                            class="m-0" for="l">L</label><input type="radio" name="talle"></li>
+                                    <li class="d-flex flex-row justify-content-between font-weight-bold "><label
+                                            class="m-0" for="xl">XL</label><input type="radio" name="talle"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Precio
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$100-$200
+                                    <input type="radio" name="precio"></li>
+                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$200-$400
+                                    <input type="radio" name="precio"></li>
+                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$400-$600
+                                    <input type="radio" name="precio"></li>
+                                <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$600-$800
+                                    <input type="radio" name="precio"></li>
+                                <li class="d-flex flex-row justify-content-between font-weight-bold">$800-$1000 <input
+                                        type="radio" name="precio"></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Género
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-4">
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
+                                        Hombre<input type="radio" name="genero"></li>
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
+                                        Mujer<input type="radio" name="genero"></li>
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
+                                        Unisex<input type="radio" name="genero"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Estilo
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-4">
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
+                                        Urbano<input type="radio" name="estilo"></li>
+                                    <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
+                                        Deportivo<input type="radio" name="estilo"></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
-                                Precio
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$100-$200
-                                <input type="radio" name="precio"></li>
-                            <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$200-$400
-                                <input type="radio" name="precio"></li>
-                            <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$400-$600
-                                <input type="radio" name="precio"></li>
-                            <li class="d-flex flex-row justify-content-between mb-2 font-weight-bold">$600-$800
-                                <input type="radio" name="precio"></li>
-                            <li class="d-flex flex-row justify-content-between font-weight-bold">$800-$1000 <input
-                                    type="radio" name="precio"></li>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                aria-controls="collapseThree">
-                                Género
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4">
-                                <li
-                                    class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
-                                    Hombre<input type="radio" name="genero"></li>
-                                <li
-                                    class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
-                                    Mujer<input type="radio" name="genero"></li>
-                                <li
-                                    class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
-                                    Unisex<input type="radio" name="genero"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                aria-controls="collapseFour">
-                                Estilo
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <ul class="list-unstyled mb-4">
-                                <li
-                                    class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
-                                    Urbano<input type="radio" name="estilo"></li>
-                                <li
-                                    class="d-flex flex-row justify-content-between mb-2 font-weight-bold">
-                                    Deportivo<input type="radio" name="estilo"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+
             </div>
             <div class="col-12 col-lg-10 row row-cols-1  row-cols-sm-2 row-cols-lg-4 my-5 marca m-0">
-            <div class="col mb-4 text-center">
-                <div class="card cardh">
-                    <img src="../../multimedia/adiwoman.jpg" class="img-fluid" alt="nike5" />
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h2 class="card-title">Remera Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh">
+                        <img src="../../multimedia/adiwoman.jpg" class="img-fluid" alt="nike5" />
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h2 class="card-title">Remera Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4 text-center">
-                <div class="card cardh">
-                    <img src="../../multimedia/camperaadidas.jpg" class="img-fluid" alt="camperaadidas" />
-                    <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <h2 class="card-title">Campera Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh">
+                        <img src="../../multimedia/camperaadidas.jpg" class="img-fluid" alt="camperaadidas" />
+                        <div class="card-body d-flex flex-column align-items-center justify-content-end">
+                            <h2 class="card-title">Campera Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4 text-center">
-                <div class="card cardh">
-                    <img src="../../multimedia/sweatadidas.jpg" class="img-fluid" alt="jordan3" />
-                    <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <h2 class="card-title">Suéter Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh">
+                        <img src="../../multimedia/sweatadidas.jpg" class="img-fluid" alt="jordan3" />
+                        <div class="card-body d-flex flex-column align-items-center justify-content-end">
+                            <h2 class="card-title">Suéter Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4 text-center">
-                <div class="card cardh">
-                    <img src="../../multimedia/remeraadidas.jpg" class="img-fluid" alt="remeraadidas" />
-                    <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <h2 class="card-title">Remera Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh">
+                        <img src="../../multimedia/remeraadidas.jpg" class="img-fluid" alt="remeraadidas" />
+                        <div class="card-body d-flex flex-column align-items-center justify-content-end">
+                            <h2 class="card-title">Remera Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4 text-center">
-                <div class="card cardh">
-                    <img src="../../multimedia/remeraadidas2.jpg" class="img-fluid" alt="remeraadidas2" />
-                    <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <h2 class="card-title">Remera Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh">
+                        <img src="../../multimedia/remeraadidas2.jpg" class="img-fluid" alt="remeraadidas2" />
+                        <div class="card-body d-flex flex-column align-items-center justify-content-end">
+                            <h2 class="card-title">Remera Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4 text-center">
-                <div class="card cardh">
-                    <img src="../../multimedia/buzoadidas2.jpg" class="img-fluid" alt="buzoadidas2" />
-                    <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <h2 class="card-title">Buzo Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh">
+                        <img src="../../multimedia/buzoadidas2.jpg" class="img-fluid" alt="buzoadidas2" />
+                        <div class="card-body d-flex flex-column align-items-center justify-content-end">
+                            <h2 class="card-title">Buzo Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4 text-center">
-                <div class="card cardh">
-                    <img src="../../multimedia/adiwoman3.jpg" class="img-fluid" alt="jordan1" />
-                    <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <h2 class="card-title">Remera Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh">
+                        <img src="../../multimedia/adiwoman3.jpg" class="img-fluid" alt="jordan1" />
+                        <div class="card-body d-flex flex-column align-items-center justify-content-end">
+                            <h2 class="card-title">Remera Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4 text-center">
-                <div class="card cardh ">
-                    <img src="../../multimedia/buzoadidas.jpg" class="img-fluid" alt="jordan2" />
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h2 class="card-title">Buzo Adidas</h2>
-                        <a href="#" class="btn btn-primary buy">Comprar</a>
+                <div class="col mb-4 text-center">
+                    <div class="card cardh ">
+                        <img src="../../multimedia/buzoadidas.jpg" class="img-fluid" alt="jordan2" />
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h2 class="card-title">Buzo Adidas</h2>
+                            <a href="#" class="btn btn-primary buy">Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
-    </div>
     </main>
     <!-- inicio footer -->
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-12 text-center redes fote">
-                <h2>Redes</h2>
-                <ul class="d-flex flex-row justify-content-around list-unstyled">
+            <div class="col-12 d-flex flex-column align-items-center redes fote">
+                <h2 class="text-center p-2">Redes</h2>
+                <ul class="d-flex justify-content-around list-unstyled w-100">
                     <li>
                         <a href="https://www.instagram.com/">
                             <i class="text-light fa-brands fa-square-instagram"></i></a>
@@ -274,16 +271,14 @@
                     </li>
                 </ul>
             </div>
-            <div
-                class="col-6 d-flex flex-column justify-content-center align-items-center fote metodos mb-3 border-top border-dark ">
-                <h2 class="text-center">Métodos de Pago</h2>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center fote metodos mb-3">
+                <h2 class="text-center p-2">Métodos de Pago</h2>
                 <a href="https://www.mercadopago.com.ar/">
                     <img class="img-fluid" src="../../multimedia/mp.png" alt="mercadopago" />
                 </a>
             </div>
-            <div
-                class="col-6 d-flex flex-column justify-content-center align-items-center fote dataf mb-3 border-top border-dark ">
-                <h2 class="text-center">Data Fiscal</h2>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center fote dataf mb-3">
+                <h2 class="text-center p-2">Data Fiscal</h2>
                 <a class="d-flex" href="https://www.afip.gob.ar/960/">
                     <img class="img-fluid align-self-center" src="../../multimedia/afip2.jpg" alt="afip" />
                 </a>
@@ -316,4 +311,5 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

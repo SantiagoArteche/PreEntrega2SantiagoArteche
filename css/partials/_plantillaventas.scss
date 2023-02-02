@@ -1,3 +1,16 @@
+.mbus {
+    & .card-header  {
+        background: rgb(9, 9, 121);
+        & button{
+            color: white;
+            text-decoration: none;
+           
+        }
+    }
+
+    
+}
+
 .ven {
     & .cardh:hover {
         box-shadow: rgba(42, 91, 253, 0.4) -5px 5px, rgba(42, 91, 253, 0.3) -10px 10px,
@@ -5,7 +18,7 @@
             rgba(42, 91, 253, 0.05) -25px 25px;
 
         transform: scale(1.02);
-    }
+    }   
 
     & .buy {
         animation: comprarmovimiento 0.5s;
