@@ -1,24 +1,22 @@
 .mbus {
-    & .card-header  {
+    & .card-header {
         background: rgb(9, 9, 121);
-        & button{
+
+        & button {
             color: white;
             text-decoration: none;
-           
         }
     }
-
-    
 }
 
 .ven {
     & .cardh:hover {
-        box-shadow: rgba(42, 91, 253, 0.4) -5px 5px, rgba(42, 91, 253, 0.3) -10px 10px,
-            rgba(42, 91, 253, 0.2) -15px 15px, rgba(42, 91, 253, 0.1) -20px 20px,
-            rgba(42, 91, 253, 0.05) -25px 25px;
+        box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px,
+            rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px,
+            rgba(0, 0, 0, 0.05) -25px 25px;
 
         transform: scale(1.02);
-    }   
+    }
 
     & .buy {
         animation: comprarmovimiento 0.5s;
@@ -26,35 +24,32 @@
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
-        font-size: $fontsize*1.5;
+        font-size: $fontsize * 1.5;
 
         @include medium {
-            font-size: $fontsize*1.3;
+            font-size: $fontsize * 1.3;
         }
 
         @include small {
-            font-size: $fontsize*1.3;
+            font-size: $fontsize * 1.3;
         }
 
         @include extrasmall {
-            font-size: $fontsize*1.1;
+            font-size: $fontsize * 1.1;
         }
-
     }
 
     & h2 {
-        font-size: $fontsize*1.9;
+        font-size: $fontsize * 1.9;
 
         @include small {
-            font-size: $fontsize*1.7;
+            font-size: $fontsize * 1.7;
         }
 
         @include extrasmall {
-            font-size: $fontsize*1.7;
+            font-size: $fontsize * 1.7;
         }
-
     }
-
 }
 
 @keyframes comprarmovimiento {

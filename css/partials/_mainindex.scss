@@ -22,7 +22,7 @@
       }
 
       @include extrasmall {
-        height: $alto * 0.8;
+        height: $alto * 0.73;
       }
     }
   }
@@ -89,10 +89,17 @@ article {
     }
 
     &.art2 {
-      & h1 {
-        border: 6px double black;
-        background-color: white;
+      background-color: black;
+      
+      & .card{
+        background-color: black;
+      }
+      
+      & h2 {
+        border: 6px double white;
+        background-color: purple;
         font-size: $fontsize*2.9;
+        color: white;
 
         @include medium {
           font-size: $fontsize*2.7;
@@ -119,6 +126,7 @@ article {
 
       & a {
         font-size: $fontsize*2;
+        background-color: purple;
 
         @include small {
           font-size: $fontsize*1.7

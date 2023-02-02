@@ -1,5 +1,6 @@
-.sobrenosotroslist {
-    & li {
-        width: 100%;
+#nosotros{
+    & .card-header{
+        background-color: rgb(8, 52, 117);
+        border: $borderblack;
     }
 }

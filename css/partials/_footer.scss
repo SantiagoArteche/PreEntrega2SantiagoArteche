@@ -4,7 +4,7 @@ footer {
             rgba(255, 255, 255, 1) 0%,
             rgba(46, 46, 175, 1) 46%,
             rgba(126, 0, 139, 1) 100%);
-    border-top: $borderblack;
+
 
     & .fote {
         a {
@@ -34,7 +34,7 @@ footer {
             color: white;
             border: 3px solid white;
             border-radius: 10px;
-            
+
             @include medium {
                 font-size: $fontsize*2.7;
             }
@@ -68,8 +68,12 @@ footer {
     }
 
     & .redes {
-        margin-top: 10px;
-        
+        border: 5px solid black;
+        margin-bottom: 10px;
+
+        & h2 {
+            margin-top: 10px;
+        }
 
         & li {
             font-size: $fontsize*5;
