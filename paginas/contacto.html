@@ -68,7 +68,7 @@
         <div class="d-flex flex-column align-items-center font-weight-bold">Teléfono:
             <a href="tel:+543413650110" class="my-2 text-light">+54 0341 365 0110 </a>
         </div>
-        <form action="contacto.html" enctype="application/x-www-form-urlencoded" method="get" class="container fcont my-5 bg-secondary" netlify>
+        <form action="contacto.html" enctype="application/x-www-form-urlencoded" method="post" name="formulariocontacto" class="container fcont my-5 bg-secondary" netlify>
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <h2 class="text-center mt-2">Formulario de Contacto</h2>
@@ -76,46 +76,46 @@
                 <div class="form-group col-md-6">
 
                     <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="inputlastname" required>
+                    <input type="text" name="apellido" class="form-control" id="inputlastname" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="nombres">Nombres</label>
-                    <input type="password" class="form-control" id="inputnames" required>
+                    <input type="password" name="nombres" class="form-control" id="inputnames" required>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="inputphone">Número de Teléfono</label>
-                <input type="number" class="form-control" id="inputphone" required>
+                <input type="number" name="telefono" class="form-control" id="inputphone" required>
             </div>
             <div class="form-group">
                 <label for="inputemail">Dirección de Correo Electrónico</label>
-                <input type="email" class="form-control" id="inputemail" required>
+                <input type="email" name="correo" class="form-control" id="inputemail" required>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputcity">Ciudad</label>
-                    <input type="text" class="form-control" id="inputcity" required>
+                    <input type="text" name="ciudad" class="form-control" id="inputcity" required>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputstate">Provincia</label>
-                    <input type="text" class="form-control" id="inputstate" required>
+                    <input type="text" name="provincia" class="form-control" id="inputstate" required>
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputzip">Código Postal</label>
-                    <input type="text" class="form-control" id="inputzip" required>
+                    <input type="text" name="codigopostal" class="form-control" id="inputzip" required>
                 </div>
             </div>
             <div class="form-group">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridcheck">
+                    <input class="form-check-input" name="notificaciones" type="checkbox" id="gridcheck">
                     <label class="form-check-label" for="gridcheck">
                         Querés recibir notificaciones?
                     </label>
 
                 </div>
-                <textarea name="detalle" id="detalle" class="mt-4" placeholder="Motivo de contacto..."
+                <textarea name="comentarios" id="comentarios" class="mt-4" placeholder="Motivo de contacto..."
                     required></textarea>
             </div>
             <div class="d-flex justify-content-center">
